@@ -13,4 +13,4 @@ function urlB64ToUint8Array(base64String) {
   return outputArray;
 };
 
-modules.export = urlB64ToUint8Array;
+module.exports = urlB64ToUint8Array;
