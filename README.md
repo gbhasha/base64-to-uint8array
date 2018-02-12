@@ -8,13 +8,13 @@ Used while exchanging secret key between client and server.
 
 ## Usage
 ```js
-import 'urlB64ToUint8Array' from 'urlB64ToUint8Array';
+import urlB64ToUint8Array from 'urlb64touint8array';
 ```
 
 or
 
 ```js
-var urlB64ToUint8Array = require('urlB64ToUint8Array');
+var urlB64ToUint8Array = require('urlb64touint8array');
 ```
 
 
