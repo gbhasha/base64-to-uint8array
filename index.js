@@ -1,4 +1,5 @@
-function urlB64ToUint8Array(base64String) {
+'use strict';
+module.exports =  function (base64String) {
   var padding = '='.repeat((4 - base64String.length % 4) % 4);
   var base64 = (base64String + padding)
     .replace(/\-/g, '+')
@@ -7,10 +8,8 @@ function urlB64ToUint8Array(base64String) {
   var rawData = window.atob(base64);
   var outputArray = new Uint8Array(rawData.length);
 
-  for (let i = 0; i < rawData.length; ++i) {
+  for (var i = 0; i < rawData.length; ++i) {
     outputArray[i] = rawData.charCodeAt(i);
   }
   return outputArray;
 };
-
-module.exports = urlB64ToUint8Array;
