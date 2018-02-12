@@ -6,6 +6,11 @@ The [Uint8Array](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Referen
 
 Used while exchanging secret key between client and server.
 
+## Installation
+```
+npm install urlb64touint8array
+```
+
 ## Usage
 ```js
 import urlB64ToUint8Array from 'urlb64touint8array';
